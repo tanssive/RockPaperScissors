@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./img/subtle_carbon.png);
+    /* Background pattern from Toptal Subtle Patterns => https://www.toptal.com/designers/subtlepatterns/ */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.figures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.figure {
+    background-color: #5F4B8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 2px solid #2c0266;
+    border-radius: 50%;
+}
+
+.figure img {
+    width: 100px;
+    height: 100px;
+}
+
+.figure:hover {
+    border: 2px solid #7221f3;
+    cursor: pointer;
+    padding: 20px;
+    background-color: #E69A8D;
+    transition: background-color 0.7s, border 1s;
+}
+
+.result {
+    color: white;
+    font-size: 55px;
+    margin-top: -450px;
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(214, 214, 178), rgb(45, 115, 243));
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 750px) {
+    .figure {
+        width: 150px;
+        height: 150px;
+    }
+
+    .figure img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .figure:hover{
+        padding: 0;
+    }
+
+    .result {
+        font-size: 22px;
+        margin-top: -250px;
+    }
+}
