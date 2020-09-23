@@ -40,7 +40,7 @@ function checkWinner(computerMove, userMove) {
         (computerMove === 'paper' && userMove === 'rock')       ||
         (computerMove === 'scissors' && userMove === 'paper')
     ) {
-        setResultOnHTML(`💻 won <br /> 🧍 ${userMove} vs  ${computerMove} 💻`);
+        setResultOnHTML(`You lost! <br /> 🧍 ${userMove} vs  ${computerMove} 💻`);
     }
 
     else if (
@@ -48,7 +48,7 @@ function checkWinner(computerMove, userMove) {
         (userMove === 'paper' && computerMove === 'rock')       ||
         (userMove === 'scissors' && computerMove === 'paper')
     ) {
-        setResultOnHTML(`🧍 won <br /> 🧍 ${userMove} vs ${computerMove} 💻`);
+        setResultOnHTML(`You won! <br /> 🧍 ${userMove} vs ${computerMove} 💻`);
     }
 
     else  {
