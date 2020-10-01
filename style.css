@@ -38,6 +38,10 @@ body {
     margin: 20px;
     border: 2px solid #2c0266;
     border-radius: 50%;
+    -webkit-box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .figure img {
@@ -51,6 +55,15 @@ body {
     padding: 20px;
     background-color: #E69A8D;
     transition: background-color 0.7s, border 1s;
+}
+
+.figure:active {
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
 }
 
 .result {
